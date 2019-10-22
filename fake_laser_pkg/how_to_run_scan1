@@ -1,0 +1,7 @@
+1.set environment variables.
+2.roslaunch turtlebot_gazebo turtlebot_world.launch (on pc running ros)
+3.set matlab and linux environment variables(on pc running matlab)
+(https://in.mathworks.com/matlabcentral/answers/119559-why-is-the-ros-subscriber-callback-in-matlab-not-triggered-when-messages-are-published-from-an-exter)
+4.rosrun fake_laser_pkg laserSub.py
+5.rosrun rviz rviz(map=camera_depth_frame,add robot model and laser scan,set laser scan topic=scan1
+6.roslaunch fake_laser_pkg start_laser.launch (twice, don't ask why)
